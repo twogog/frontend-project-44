@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/twogog/frontend-project-44/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/twogog/frontend-project-44#readme"
 }
