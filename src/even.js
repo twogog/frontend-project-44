@@ -26,7 +26,7 @@ const isEven = () => {
         return console.log(`Congratulations, ${name}!`);
       }
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${isOk}`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isOk}'.`);
       return console.log(`Let's try again, ${name}!`);
     }
   }
