@@ -30,6 +30,7 @@ const isEven = () => {
       return console.log(`Let's try again, ${name}!`);
     }
   }
+  return '';
 };
 
 export default isEven;
