@@ -10,7 +10,8 @@ export default (purpose, gameLogic, whichgame) => {
     const result = gameLogic();
     let answer = readlineSync.question('Your answer: ');
     switch (whichgame) {
-      case 'number': answer = +answer; break;
+      case 'number':
+        if (typeof answer === 'number') { answer = +answer; } break;
       default: break;
     }
 
