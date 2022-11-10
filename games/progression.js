@@ -10,9 +10,10 @@ const gameLogic = () => {
     progression.push(progFirst);
     progFirst += progrStep;
   }
+  const result = progression[progDots];
   progression[progDots] = '..';
   console.log(`Question: ${progression.join(' ')}`);
-  return progrStep;
+  return result;
 };
 
 export default () => {
