@@ -7,11 +7,11 @@ const gameLogic = () => {
   const progDots = _.random(0, progrLength);
   const progression = [];
   for (let i = 0; i < progrLength; i += 1) {
-    progression.push(` ${progFirst}`);
+    progression.push(progFirst);
     progFirst += progrStep;
     if (progression.length - 1 === progDots) { progression[i] = '..'; }
   }
-  console.log(`Question: ${progression}`);
+  console.log(`Question: ${progression.join(' ')}`);
   return progrStep;
 };
 
