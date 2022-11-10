@@ -2,7 +2,7 @@ import _ from 'lodash';
 import commonLogic from '../src/index.js';
 
 const gameLogic = () => {
-  const [progrLength, progrStep] = [_.random(5, 10), _.random(1, 10), _.random(0, 100)];
+  const [progrLength, progrStep] = [_.random(5, 10), _.random(1, 10)];
   let progFirst = _.random(0, 100);
   const progDots = _.random(0, progrLength - 1);
   const progression = [];
