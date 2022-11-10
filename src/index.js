@@ -16,7 +16,8 @@ export default (purpose, gameLogic) => {
       }
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
-      return console.log(`Let's try again, ${name}!`);
+      console.log(`Let's try again, ${name}!`);
+      i = -1;
     }
   }
   return '';
