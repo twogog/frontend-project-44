@@ -25,5 +25,5 @@ const gameLogic = () => {
 };
 
 export default () => {
-  commonLogic('Find the greates common divisor of given numbers.', gameLogic);
+  commonLogic('Find the greatest common divisor of given numbers.', gameLogic);
 };
