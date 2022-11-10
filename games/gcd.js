@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import commonLogic from './index.js';
+import commonLogic from '../src/index.js';
 
 const makeSimpleNumbers = (number) => {
   const arr = [];

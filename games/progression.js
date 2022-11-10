@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import commonLogic from './index.js';
+import commonLogic from '../src/index.js';
 
 const gameLogic = () => {
   const [progrLength, progrStep] = [_.random(5, 10), _.random(1, 10), _.random(0, 100)];

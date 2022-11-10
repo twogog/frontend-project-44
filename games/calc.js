@@ -1,4 +1,4 @@
-import commonLogic from './index.js';
+import commonLogic from '../src/index.js';
 
 const operRandom = () => {
   const result = Math.floor(Math.random() * 10);

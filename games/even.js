@@ -1,4 +1,4 @@
-import commonLogic from './index.js';
+import commonLogic from '../src/index.js';
 
 const gameLogic = () => {
   const random = Math.floor(Math.random() * 100);
