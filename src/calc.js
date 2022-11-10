@@ -25,7 +25,7 @@ const gameLogic = () => {
 };
 
 const makeCalc = () => {
-  commonLogic('What is the result of the expression?', gameLogic, 'number');
+  commonLogic('What is the result of the expression?', gameLogic);
 };
 
 export default makeCalc;

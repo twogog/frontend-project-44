@@ -11,7 +11,7 @@ const gameLogic = () => {
 };
 
 const isEven = () => {
-  commonLogic('Answer "yes" if the number even, otherwise answer "no".', gameLogic, 'string');
+  commonLogic('Answer "yes" if the number even, otherwise answer "no".', gameLogic);
 };
 
 export default isEven;

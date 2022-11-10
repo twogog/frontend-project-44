@@ -9,12 +9,12 @@ const gameLogic = () => {
   for (let i = 0; i < progrLength; i += 1) {
     progression.push(` ${progFirst}`);
     progFirst += progrStep;
-    if (progression.length === progDots) { progression[i] = '..'; }
+    if (progression.length - 1 === progDots) { progression[i] = '..'; }
   }
   console.log(`Question: ${progression}`);
   return progrStep;
 };
 
 export default () => {
-  commonLogic('What number is missing in the progression.', gameLogic, 'number');
+  commonLogic('What number is missing in the progression.', gameLogic);
 };

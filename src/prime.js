@@ -13,5 +13,5 @@ const gameLogic = () => {
 };
 
 export default () => {
-  commonLogic('Answer "yes" if given number is prime, otherwise answer "no".', gameLogic, 'string');
+  commonLogic('Answer "yes" if given number is prime, otherwise answer "no".', gameLogic);
 };

@@ -1,20 +1,14 @@
 import readlineSync from 'readline-sync';
 
-export default (purpose, gameLogic, whichgame) => {
+export default (purpose, gameLogic) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(purpose);
 
   for (let i = 0; i < 3; i += 1) {
-    const result = gameLogic();
-    let answer = readlineSync.question('Your answer: ');
-    switch (whichgame) {
-      case 'number':
-        if (typeof answer === 'number') { answer = +answer; } break;
-      default: break;
-    }
-
+    const result = String(gameLogic());
+    const answer = readlineSync.question('Your answer: ');
     if (answer === result) {
       console.log('Correct!');
       if (i === 2) {
