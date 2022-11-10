@@ -14,7 +14,7 @@ const makeSimpleNumbers = (number) => {
 
 const gameLogic = () => {
   let result = 1;
-  const [a, b] = [Math.floor(Math.random() * 100), Math.floor(Math.random() * 100)];
+  const [a, b] = [Math.floor(Math.random() * 100) + 1, Math.floor(Math.random() * 100) + 1];
   if (a === b) { result = a; }
   const firstAr = makeSimpleNumbers(a);
   const secondAr = makeSimpleNumbers(b);
